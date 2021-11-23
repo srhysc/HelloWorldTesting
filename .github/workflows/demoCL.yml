@@ -21,12 +21,12 @@ jobs:
     - name: Checkout Own Repo to cloud
       uses: actions/checkout@v2
       with: 
-        repository: srhysc/HelloWorldTesting
+        repository: lowkh/HelloWorldDemoT02
     
     - name: Checkout private repo remotely
       uses: actions/checkout@v2
       with:
-        repository: srhysc/HelloWorldTesting
+        repository: lowkh2/DevOpsQARepo
         path: tests
         token: ${{ secrets.QA_REMOTE }}
         
